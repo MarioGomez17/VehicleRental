@@ -79,11 +79,11 @@ namespace VEHICLE_RENTAL.Models
                 "INNER JOIN vehicle_rental.vehicle_type " +
                 "ON vehicle_rental.vehicle_type.Id_VehicleType = vehicle_rental.vehicle_brand.VehicleType_VehicleBrand " +
                 "ORDER BY vehicle_rental.vehicle.Id_Vehicle ASC";
-            MySqlConnection ConnectionBD = ConnectionModel.Conect();
+            MySqlConnection ConnectionDB = ConnectionModel.Conect();
             try
             {
-                ConnectionBD.Open();
-                MySqlCommand Command = new(SQLQuery, ConnectionBD);
+                ConnectionDB.Open();
+                MySqlCommand Command = new(SQLQuery, ConnectionDB);
                 MySqlDataReader Reader = Command.ExecuteReader();
                 if (Reader.HasRows)
                 {
@@ -117,7 +117,7 @@ namespace VEHICLE_RENTAL.Models
             catch (Exception) { }
             finally
             {
-                ConnectionBD.Close();
+                ConnectionDB.Close();
             }
             foreach (var Vehicle in VehiclesList)
             {
@@ -168,11 +168,11 @@ namespace VEHICLE_RENTAL.Models
                 "ON vehicle_rental.vehicle_type.Id_VehicleType = vehicle_rental.vehicle_brand.VehicleType_VehicleBrand " +
                 "WHERE vehicle_rental.vehicle_city.Name_VehicleCity = '" + City + "' " +
                 "ORDER BY vehicle_rental.vehicle.Id_Vehicle ASC";
-            MySqlConnection ConnectionBD = ConnectionModel.Conect();
+            MySqlConnection ConnectionDB = ConnectionModel.Conect();
             try
             {
-                ConnectionBD.Open();
-                MySqlCommand Command = new(SQLQuery, ConnectionBD);
+                ConnectionDB.Open();
+                MySqlCommand Command = new(SQLQuery, ConnectionDB);
                 MySqlDataReader Reader = Command.ExecuteReader();
                 if (Reader.HasRows)
                 {
@@ -206,7 +206,7 @@ namespace VEHICLE_RENTAL.Models
             catch (Exception) { }
             finally
             {
-                ConnectionBD.Close();
+                ConnectionDB.Close();
             }
             foreach (var Vehicle in VehiclesList)
             {
@@ -257,11 +257,11 @@ namespace VEHICLE_RENTAL.Models
                 "ON vehicle_rental.vehicle_type.Id_VehicleType = vehicle_rental.vehicle_brand.VehicleType_VehicleBrand " +
                 "WHERE vehicle_rental.vehicle.Owner_Vehicle = '" + Owner_Vehicle + "' " +
                 "ORDER BY vehicle_rental.vehicle.Id_Vehicle ASC";
-            MySqlConnection ConnectionBD = ConnectionModel.Conect();
+            MySqlConnection ConnectionDB = ConnectionModel.Conect();
             try
             {
-                ConnectionBD.Open();
-                MySqlCommand Command = new(SQLQuery, ConnectionBD);
+                ConnectionDB.Open();
+                MySqlCommand Command = new(SQLQuery, ConnectionDB);
                 MySqlDataReader Reader = Command.ExecuteReader();
                 if (Reader.HasRows)
                 {
@@ -295,7 +295,7 @@ namespace VEHICLE_RENTAL.Models
             catch (Exception) { }
             finally
             {
-                ConnectionBD.Close();
+                ConnectionDB.Close();
             }
             foreach (var Vehicle in VehiclesList)
             {
@@ -346,11 +346,11 @@ namespace VEHICLE_RENTAL.Models
                 "ON vehicle_rental.vehicle_type.Id_VehicleType = vehicle_rental.vehicle_brand.VehicleType_VehicleBrand " +
                 "WHERE vehicle_rental.vehicle.Id_Vehicle = '" + Id_Vehicle + "' " +
                 "ORDER BY vehicle_rental.vehicle.Id_Vehicle ASC";
-            MySqlConnection ConnectionBD = ConnectionModel.Conect();
+            MySqlConnection ConnectionDB = ConnectionModel.Conect();
             try
             {
-                ConnectionBD.Open();
-                MySqlCommand Command = new(SQLQuery, ConnectionBD);
+                ConnectionDB.Open();
+                MySqlCommand Command = new(SQLQuery, ConnectionDB);
                 MySqlDataReader Reader = Command.ExecuteReader();
                 if (Reader.HasRows)
                 {
@@ -383,7 +383,7 @@ namespace VEHICLE_RENTAL.Models
             catch (Exception) { }
             finally
             {
-                ConnectionBD.Close();
+                ConnectionDB.Close();
             }
             return Vehicle;
         }
