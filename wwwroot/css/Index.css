@@ -9,3 +9,228 @@
     --Wihte: #FFFFFF;
     --Black: #000000;
 }
+
+/*------------------------------------- GENERAL -------------------------------------*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--Font);
+    text-transform: uppercase;
+}
+
+.BodyIndex {
+    height: 100vh;
+}
+
+.ContentBodyIndex{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/*------------------------------------- NAVIGATION -------------------------------------*/
+
+.DivNavBarIndex{
+    width: 15%;
+    display: flex;
+}
+
+.NavBarIndex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--SecondColor);
+}
+
+.DivLinkLogoIndex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageLogo{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: solid 7px var(--FifthColor);
+}
+
+.DivLinkIndex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LinkIndex {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    border: solid 5px transparent;
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+}
+
+
+.IconLinkSVG {
+    filter: drop-shadow(0 0 1px var(--Wihte)) drop-shadow(0 0 1px var(--Wihte)) drop-shadow(0 0 1px var(--Wihte)) drop-shadow(0 0 1px var(--Wihte));
+}
+
+.LinkTextIndex {
+    color: var(--Black);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.LinkIndex:hover .LinkTextIndex {
+    opacity: 1;
+}
+
+.LinkIndex:hover .IconLinkSVG {
+    filter: none;
+}
+
+.LinkIndex:hover {
+    background-color: var(--FourthColor);
+    border-color: var(--FifthColor);
+}
+
+/*------------------------------------- CONTENT -------------------------------------*/
+
+.DivContentIndex{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--FirstColor);
+}
+
+.DivHeaderIndex{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.HeaderIndex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainTitlelIndex{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.DivMainContentIndex {
+    height: 85%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.DivMainIndex {
+    height: 100%;
+    width: 100%;
+}
+
+.MainIndex {
+    height: 100%;
+    width: 100%;
+}
+
+.ContentMainIndex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FiltersBarIndex{
+    width: 95%;
+    height: 10%;
+}
+
+.VehicleCardsIndex {
+    width: 95%;
+    height: 90%;
+    background-color: var(--ThirdColor);
+    border: solid 5px var(--SixthColor);
+    overflow: auto;
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.InfoVehicleModel {
+    width: 95%;
+    height: 100%;
+    border-radius: 10px;
+    border: 5px solid var(--Black);
+    background-color: var(--SecondColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.VehiclePhoto {
+    width: 230px;
+    height: 150px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.VehicleInfoTitle{
+    color: var(--Wihte);
+    font-weight: bold;
+    margin: 0;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.VehicleInfoValue {
+    color: var(--FourthColor);
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.LinkVehicleInfoIndex{
+    text-decoration: none;
+}
+
+.TextLinkVehicleInfoIndex{
+    color: var(--FirstColor);
+    font-size: 18px;
+}
+
+.DivFooterIndex {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
