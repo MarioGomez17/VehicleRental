@@ -20,6 +20,11 @@
 
         public string Password_User { get; set; }
 
-        public string Id_UserState_User { get; set; }
+        public string UserState_User { get; set; }
+
+        public UserModel GetUser(string UserEmail, string UserPassword)
+        {
+            return null;
+        }
     }
 }
