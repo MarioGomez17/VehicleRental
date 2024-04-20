@@ -36,14 +36,14 @@ namespace VEHICLE_RENTAL.Controllers
         public async Task<IActionResult> LogInAction(string UserEmail, string UserPassword, string KeepSession)
         {
             UserModel UserModel = new();
-            UserModel User = UserModel.GetUser(UserEmail, UserPassword);
+            UserModel = UserModel.GetUser(UserEmail, UserPassword);
             if (User != null)
             {
-                if (User.UserState_User == "Activo")
+                if (UserModel.UserState_User == "Activo")
                 {
                     var Claims = new List<Claim> {
-                        new (ClaimTypes.Name, User.Name_User),
-                        new ("Email", User.Email_User)
+                        new (ClaimTypes.Name, UserModel.Name_User),
+                        new ("Email", UserModel.Email_User)
                     };
                     ClaimsIdentity ClaimsIdentity = new(Claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     Claim DatosUsuario = new(ClaimTypes.UserData, JsonConvert.SerializeObject(User));
