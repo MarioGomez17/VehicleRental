@@ -1,0 +1,353 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VEHICLE_RENTAL.bundle.scp.css",
+      "PackagePath": "staticwebassets\\VEHICLE_RENTAL.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerDiana1117553148_FZ250Azul.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerDiana1117553148_FZ250Azul.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerDiana1117553148_PradoBlanca.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerDiana1117553148_PradoBlanca.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerDiana1117553148_Pulsar180Negra.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerDiana1117553148_Pulsar180Negra.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerDiana1117553148_XR190Blanca.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerDiana1117553148_XR190Blanca.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerDiana1117553148_XTZ125Blanca.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerDiana1117553148_XTZ125Blanca.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerMario1002960089_EcoNegra.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerMario1002960089_EcoNegra.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerMario1002960089_FZ16Roja.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerMario1002960089_FZ16Roja.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerMario1002960089_Pulsar125Roja.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerMario1002960089_Pulsar125Roja.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerMario1002960089_SparkAzul.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerMario1002960089_SparkAzul.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\Vehiclephotos\\OwnerMario1002960089_XR150Roja.webp",
+      "PackagePath": "staticwebassets\\Vehiclephotos\\OwnerMario1002960089_XR150Roja.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\MakeRental.css",
+      "PackagePath": "staticwebassets\\css\\MakeRental.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\RateRental.css",
+      "PackagePath": "staticwebassets\\css\\RateRental.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\RegisterVehicle.css",
+      "PackagePath": "staticwebassets\\css\\RegisterVehicle.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\RentalHistory.css",
+      "PackagePath": "staticwebassets\\css\\RentalHistory.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\RentalInfo.css",
+      "PackagePath": "staticwebassets\\css\\RentalInfo.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\SignIn.css",
+      "PackagePath": "staticwebassets\\css\\SignIn.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\UserInfo.css",
+      "PackagePath": "staticwebassets\\css\\UserInfo.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\VehicleInfo.css",
+      "PackagePath": "staticwebassets\\css\\VehicleInfo.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\VehicleInfoRental.css",
+      "PackagePath": "staticwebassets\\css\\VehicleInfoRental.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\css\\VehiclesInfo.css",
+      "PackagePath": "staticwebassets\\css\\VehiclesInfo.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\images\\Logo.webp",
+      "PackagePath": "staticwebassets\\images\\Logo.webp"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\WEB\\VEHICLE_RENTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.VEHICLE_RENTAL.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.VEHICLE_RENTAL.props",
+      "PackagePath": "build\\VEHICLE_RENTAL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.VEHICLE_RENTAL.props",
+      "PackagePath": "buildMultiTargeting\\VEHICLE_RENTAL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.VEHICLE_RENTAL.props",
+      "PackagePath": "buildTransitive\\VEHICLE_RENTAL.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
