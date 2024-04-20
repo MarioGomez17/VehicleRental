@@ -26,7 +26,7 @@ namespace VEHICLE_RENTAL.Models
 
         public UserModel GetUser(string UserEmail, string UserPassword)
         {
-            UserModel UserModel = null;
+            UserModel UserModel = new();
 
             string SQLQuery = "SELECT " +
                 "vehicle_rental.user.Id_User, " +
