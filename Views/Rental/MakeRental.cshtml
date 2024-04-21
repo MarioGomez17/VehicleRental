@@ -1,4 +1,5 @@
-﻿@{
+﻿@model MakeRentalModel;
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -17,7 +18,7 @@
         <div class="DivNavBarMakeRental">
             <nav class="NavBarMakeRental">
                 <div class="LinkLogoMakeRental">
-                    <a asp-controller="Home" asp-action="Inde"><img class="ImageLogo" src="~/images/Logo.webp" alt="Logotipo" /></a>
+                    <a asp-controller="Home" asp-action="Index"><img class="ImageLogo" src="~/images/Logo.webp" alt="Logotipo" /></a>
                 </div>
                 <div class="DivLinkMakeRental">
                     <a asp-controller="User" asp-action="LogIn" class="LinkMakeRental">
@@ -95,28 +96,69 @@
                     <main role="main" class="MainMakeRental">
                         <div class="ContentMainMakeRental">
                             <div class="DivFormTitleMakeRental">
-                                <h2 class="FormTitleMakeRental">Iniciar Sesión</h2>
+                                <h2 class="FormTitleMakeRental">Realizar Alquiler</h2>
                             </div>
-                            <form asp-controller="" asp-action="" method="post" class="Form">
-                                <label>Fecha Inicio Alquiler</label>
-                                <input type="datetime" name="name" value="" />
-                                <label>Fecha Fin Alquiler</label>
-                                <input type="datetime" name="name" value="" />
-                                <label>Vehículo</label>
-                                <label>Eco Deluxe</label>
-                                <label>Lugar de Recogida y Entega</label>
-                                <select></select>
-                                <input type="checkbox" />
-                                <label>Agregar lavada</label>
-                                <input type="text" name="name" value="" />
-                                <label>Seguro</label>
-                                <select></select>
-                                <label>TotalAlquiler</label>
-                                <input type="text" name="name" value="" />
-                                <label>Método de Pago</label>
-                                <select></select>
-                                <input type="submit" name="name" value="Realizar Alquiler" />
-                            </form>
+                            <div class="DivFormMakeRental">
+                                <form asp-controller="" asp-action="" method="post" class="FormMakeRental">
+                                    <div class="DivFormMakeRentalInternalInputs">
+                                        <div class="DivFormMakeRentalInternaInputslLeft">
+                                            <label>Fecha Inicio Alquiler</label>
+                                            <input type="datetime-local" name="name" class="InputDateTime" />
+                                            <label>Fecha Fin Alquiler</label>
+                                            <input type="datetime-local" name="name" class="InputDateTime" />
+                                        </div>
+                                        <div class="DivFormMakeRentalInternaInputslRight">
+                                            <div class="DivInfoFormMakeRental">
+                                                <label>Vehículo</label>
+                                                <label>@Model.Vehicle.VehicleType_Vehicle : @Model.Vehicle.VehicleOutline_Vehicle</label>
+                                            </div>
+                                            <div class="DivInfoFormMakeRental">
+                                                <label>Lugar de Recogida y Entega</label>
+                                                <select>
+                                                    <option value=0 selected disabled>Seleccione un Lugar</option>
+                                                    @foreach (var Place in Model.Places)
+                                                    {
+                                                        <option value=@Place.Id_RentalPlace>@Place.Name_RentalPlace</option>
+                                                    }
+                                                </select>
+                                            </div>
+                                            <div class="DivInfoFormMakeRental">
+                                                <input type="checkbox" id="VehicleWashButton" />
+                                                <label>Agregar lavada</label>
+                                                <input type="text" id="VehicleWashPrice"/>
+                                            </div>
+                                            <div class="DivInfoFormMakeRental">
+                                                <label>Seguro</label>
+                                                <select>
+                                                    <option value=0 selected disabled>Seleccione un Seguro</option>
+                                                    @foreach (var Insurance in Model.Insurances)
+                                                    {
+                                                        <option value=@Insurance.Id_RentalInsurance>@Insurance.Name_RentalInsurance (@Insurance.Price_RentalInsurance)</option>
+                                                    }
+                                                </select>
+                                            </div>
+                                            <div class="DivInfoFormMakeRental">
+                                                <button id="CalculateRentalPriceButton">Calcular Total Alquiler</button>
+                                                <input type="text" value="" id="RentalPrice" />
+                                            </div>
+                                            <div class="DivInfoFormMakeRental">
+                                                <label>Método de Pago</label>
+                                                <select>
+                                                    <option value=0 selected disabled>Seleccione un Método de Pago</option>
+                                                    @foreach (var PaymentMethod in Model.PaymentMethods)
+                                                    {
+                                                        <option value=@PaymentMethod.Id_RentalPaymentMethod>@PaymentMethod.Name_RentalPaymentMethod</option>
+                                                    }
+                                                </select>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="DivFormMakeRentalInternalButton">
+                                        <input type="submit" value="Realizar Alquiler" class="ButtonSendFormMakeRental" />
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </main>
                 </div>
@@ -130,5 +172,6 @@
             </div>
         </div>
     </div>
+    <script src="~/js/MakeRental.js"></script>
 </body>
 </html>
