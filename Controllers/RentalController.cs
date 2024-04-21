@@ -16,9 +16,10 @@ namespace VEHICLE_RENTAL.Controllers
         }
 
         [Authorize]
-        public IActionResult MakeRental()
+        public IActionResult MakeRental(int Id_vehicle)
         {
-            return View();
+            MakeRentalModel MakeRentalModel = new(Id_vehicle);
+            return View(MakeRentalModel);
         }
 
         [Authorize]
@@ -37,6 +38,12 @@ namespace VEHICLE_RENTAL.Controllers
         public IActionResult RentalHistory()
         {
             return View();
+        }
+
+        public IActionResult GetRentalPrice()
+        {
+            string RentalPrice = "Hola, este es tu mensaje";
+            return Json(new { RentalPrice });
         }
     }
 }
