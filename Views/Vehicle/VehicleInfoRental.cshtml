@@ -95,36 +95,34 @@
                 <div class="DivMainVehicleInfo">
                     <main role="main" class="MainVehicleInfo">
                         <div class="ContentMainVehicleInfo">
-                            <form action="" method="post">
-                                <label>Placa</label>
-                                <input type="text" name="name" value="@Model.LicensePlate_Vehicle" readonly />
-                                <label>Cilindrada</label>
-                                <input type="text" name="name" value="" />
-                                <label>Modelo</label>
-                                <input type="text" name="name" value="" />
-                                <label>Ciudad</label>
-                                <select></select>
-                                <label>Color</label>
-                                <input type="text" name="name" value="" />
-                                <label>Cantidad de Pasajeros</label>
-                                <input type="text" name="name" value="" />
-                                <label>Tipo de Vehículo</label>
-                                <select></select>
-                                <label>Clasificación del Vehículo</label>
-                                <select></select>
-                                <label>Tipo de Combustible</label>
-                                <select></select>
-                                <label>Marca</label>
-                                <select></select>
-                                <label>Linea</label>
-                                <select></select>
-                                <label>Número de Certificado CDA</label>
-                                <input type="text" name="name" value="" />
-                                <label>Número de Póliza de Seguro</label>
-                                <input type="text" name="name" value="" />
-                                <input type="submit" value="Realizar Alquiler" />
-                                <button>Volver al Inicio</button>
-                            </form>
+                            <label>Placa</label>
+                            <input type="text" name="name" value="@Model.LicensePlate_Vehicle" readonly />
+                            <label>Cilindrada</label>
+                            <input type="text" name="name" value="" />
+                            <label>Modelo</label>
+                            <input type="text" name="name" value="" />
+                            <label>Ciudad</label>
+                            <select></select>
+                            <label>Color</label>
+                            <input type="text" name="name" value="" />
+                            <label>Cantidad de Pasajeros</label>
+                            <input type="text" name="name" value="" />
+                            <label>Tipo de Vehículo</label>
+                            <select></select>
+                            <label>Clasificación del Vehículo</label>
+                            <select></select>
+                            <label>Tipo de Combustible</label>
+                            <select></select>
+                            <label>Marca</label>
+                            <select></select>
+                            <label>Linea</label>
+                            <select></select>
+                            <label>Número de Certificado CDA</label>
+                            <input type="text" name="name" value="" />
+                            <label>Número de Póliza de Seguro</label>
+                            <input type="text" name="name" value="" />
+                            <button><a asp-controller="Rental" asp-action="MakeRental" asp-route-Id_Vehicle=@Model.Id_Vehicle>Realizar Alquiler</a></button>
+                            <button><a asp-controller="Home" asp-action="Index">Volver al Inicio</a></button>
                         </div>
                     </main>
                 </div>
