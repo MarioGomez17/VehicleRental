@@ -12,6 +12,12 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         SessionOptions.AccessDeniedPath = "/User/LogIn";
     });
 
+builder.Services.AddControllers()
+        .AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.PropertyNamingPolicy = null;
+        });
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
