@@ -9,3 +9,154 @@
     --Wihte: #FFFFFF;
     --Black: #000000;
 }
+
+/*------------------------------------- GENERAL -------------------------------------*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--Font);
+    text-transform: uppercase;
+}
+
+.BodyRegisterVehicle {
+    height: 100vh;
+}
+
+.ContentBodyRegisterVehicle {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/*------------------------------------- NAVIGATION -------------------------------------*/
+
+.DivNavBarRegisterVehicle {
+    width: 15%;
+    display: flex;
+}
+
+.NavBarRegisterVehicle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--SecondColor);
+}
+
+.DivLinkLogoRegisterVehicle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageLogo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: solid 7px var(--FifthColor);
+}
+
+.DivLinkRegisterVehicle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LinkRegisterVehicle {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    border: solid 5px transparent;
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+}
+
+
+.IconLinkSVG {
+    filter: drop-shadow(0 0 1px var(--Wihte)) drop-shadow(0 0 1px var(--Wihte)) drop-shadow(0 0 1px var(--Wihte)) drop-shadow(0 0 1px var(--Wihte));
+}
+
+.LinkTextRegisterVehicle {
+    color: var(--Black);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.LinkRegisterVehicle:hover .LinkTextRegisterVehicle {
+    opacity: 1;
+}
+
+.LinkRegisterVehicle:hover .IconLinkSVG {
+    filter: none;
+}
+
+.LinkRegisterVehicle:hover {
+    background-color: var(--FourthColor);
+    border-color: var(--FifthColor);
+}
+
+/*------------------------------------- CONTENT -------------------------------------*/
+
+.DivContentRegisterVehicle {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--FirstColor);
+}
+
+.DivHeaderRegisterVehicle {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.HeaderRegisterVehicle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainTitlelRegisterVehicle {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.DivMainContentRegisterVehicle {
+    height: 85%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.DivMainRegisterVehicle {
+    height: 100%;
+    width: 100%;
+}
+
+.MainRegisterVehicle {
+    height: 100%;
+    width: 100%;
+}
+
+.ContentMainRegisterVehicle {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -9,3 +9,154 @@
     --Wihte: #FFFFFF;
     --Black: #000000;
 }
+
+/*------------------------------------- GENERAL -------------------------------------*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--Font);
+    text-transform: uppercase;
+}
+
+.BodyRateRental {
+    height: 100vh;
+}
+
+.ContentBodyRateRental {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/*------------------------------------- NAVIGATION -------------------------------------*/
+
+.DivNavBarRateRental {
+    width: 15%;
+    display: flex;
+}
+
+.NavBarRateRental {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--SecondColor);
+}
+
+.DivLinkLogoRateRental {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageLogo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: solid 7px var(--FifthColor);
+}
+
+.DivLinkRateRental {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LinkRateRental {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    border: solid 5px transparent;
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+}
+
+
+.IconLinkSVG {
+    filter: drop-shadow(0 0 1px var(--Wihte)) drop-shadow(0 0 1px var(--Wihte)) drop-shadow(0 0 1px var(--Wihte)) drop-shadow(0 0 1px var(--Wihte));
+}
+
+.LinkTextRateRental {
+    color: var(--Black);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.LinkRateRental:hover .LinkTextRateRental {
+    opacity: 1;
+}
+
+.LinkRateRental:hover .IconLinkSVG {
+    filter: none;
+}
+
+.LinkRateRental:hover {
+    background-color: var(--FourthColor);
+    border-color: var(--FifthColor);
+}
+
+/*------------------------------------- CONTENT -------------------------------------*/
+
+.DivContentRateRental {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--FirstColor);
+}
+
+.DivHeaderRateRental {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.HeaderRateRental {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainTitlelRateRental {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.DivMainContentRateRental {
+    height: 85%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.DivMainRateRental {
+    height: 100%;
+    width: 100%;
+}
+
+.MainRateRental {
+    height: 100%;
+    width: 100%;
+}
+
+.ContentMainRateRental {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
