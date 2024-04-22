@@ -98,65 +98,69 @@
                             <div class="DivFormTitle">
                                 <h2 class="FormTitle">Crear Cuenta</h2>
                             </div>
-                            @if (ViewBag.Message != null)
-                            {
-                                <h3 class="ErroViewBag">@ViewBag.Message</h3>
-                            }
-                            <form asp-controller="User" asp-action="SignInAction" method="post" class="Formulario">
-                                <div class="DivForTwoComponents">
-                                    <div class="Component">
-                                        <input class="InputText" type="text" placeholder="Nombre" name="UserName" id="UserName" required />
-                                        <label for="UserName" class="LabelForm">Nombre</label>
+                            <div class="DivErrorViewBag">
+                                @if (ViewBag.Message != null)
+                                {
+                                    <h3 class="ErroViewBag">@ViewBag.Message</h3>
+                                }
+                            </div>
+                            <div class="DivFormSignIn">
+                                <form asp-controller="User" asp-action="SignInAction" method="post" class="FormSigIn">
+                                    <div class="DivForTwoComponents">
+                                        <div class="Component">
+                                            <input class="TextInput" type="text" placeholder="Nombre" name="UserName" id="UserName" required />
+                                            <label for="UserName" class="LabelForm">Nombre</label>
+                                        </div>
+                                        <div class="Component">
+                                            <input class="TextInput" type="text" placeholder="Apellido" name="UserLastName" id="UserLastName" required />
+                                            <label for="UserLastName" class="LabelForm">Apellido</label>
+                                        </div>
                                     </div>
-                                    <div class="Component">
-                                        <input class="InputText" type="text" placeholder="Apellido" name="UserLastName" id="UserLastName" required />
-                                        <label for="UserLastName" class="LabelForm">Apellido</label>
+                                    <div class="DivForTwoComponents">
+                                        <div class="Component">
+                                            <select id="UserIdentificationType" name="UserIdentificationType" class="FormSelect">
+                                                <option disabled selected class="FormSelectOption">Seleccione un Tipo de Identificación</option>
+                                                @foreach (var IdentificationTypeUser in Model)
+                                                {
+                                                    <option value=@IdentificationTypeUser.Id_UserIdentificationType class="FormSelectOption">
+                                                        @IdentificationTypeUser.Name_UserIdentificationType (@IdentificationTypeUser.Symbol_UserIdentificationType)
+                                                    </option>
+                                                }
+                                            </select>
+                                            <label for="UserIdentificationType" class="LabelForm">Tipo de Identificación</label>
+                                        </div>
+                                        <div class="Component">
+                                            <input class="TextInput" type="number" placeholder="Número de Identificación" name="UserIdentification" id="UserIdentification" required />
+                                            <label for="UserIdentification" class="LabelForm">Número de Identificación</label>
+                                        </div>
                                     </div>
+                                    <div class="DivForTwoComponents">
+                                        <div class="Component">
+                                            <input class="TextInput" type="number" placeholder="Teléfono" name="UserPhoneNumber" id="UserPhoneNumber" required />
+                                            <label for="UserPhoneNumber" class="LabelForm">Teléfono</label>
+                                        </div>
+                                        <div class="Component">
+                                            <input class="TextInput" type="email" placeholder="Correo" name="UserEmail" id="UserEmail" required />
+                                            <label for="UserEmail" class="LabelForm">Correo</label>
+                                        </div>
+                                    </div>
+                                    <div class="DivForTwoComponents">
+                                        <div class="Component">
+                                            <input class="TextInput" type="password" placeholder="Contraseña" name="UserPassword" id="UserPassword" required />
+                                            <label for="UserPassword" class="LabelForm">Contraseña</label>
+                                        </div>
+                                        <div class="Component">
+                                            <input class="TextInput" type="password" placeholder="Confirmar Contraseña" name="UserPasswordConfirm" id="UserPasswordConfirm" required />
+                                            <label for="UserPasswordConfirm" class="LabelForm">Confirmar Contraseña</label>
+                                        </div>
+                                    </div>
+                                    <div class="Component BtnIS">
+                                        <input type="submit" value="Registrarme" class="RegisterButton" id="RegisterButton" disabled />
+                                    </div>
+                                </form>
+                                <div class="Component DivLogIn">
+                                    <p class="TextLogIn">¿Ya tienes cuenta? <a asp-controller="User" asp-action="LogIn" class="TextLinkLogIn">Inicia Sesion</a></p>
                                 </div>
-                                <div class="DivForTwoComponents">
-                                    <div class="Component">
-                                        <select id="UserIdentificationType" name="UserIdentificationType">
-                                            <option disabled selected>Seleccione un Tipo de Identificación</option>
-                                            @foreach (var IdentificationTypeUser in Model)
-                                            {
-                                                <option value=@IdentificationTypeUser.Id_UserIdentificationType>
-                                                    @IdentificationTypeUser.Name_UserIdentificationType (@IdentificationTypeUser.Symbol_UserIdentificationType)
-                                                </option>
-                                            }
-                                        </select>
-                                        <label for="UserIdentificationType" class="LabelForm">Tipo de Identificación</label>
-                                    </div>
-                                    <div class="Component">
-                                        <input class="InputText" type="text" placeholder="Número de Identificación" name="UserIdentification" id="UserIdentification" required />
-                                        <label for="UserIdentification" class="LabelForm">Número de Identificación</label>
-                                    </div>
-                                </div>
-                                <div class="DivForTwoComponents">
-                                    <div class="Component">
-                                        <input class="InputText" type="text" placeholder="Teléfono" name="UserPhoneNumber" id="UserPhoneNumber" required />
-                                        <label for="UserPhoneNumber" class="LabelForm">Teléfono</label>
-                                    </div>
-                                    <div class="Component">
-                                        <input class="InputText" type="email" placeholder="Correo" name="UserEmail" id="UserEmail" required />
-                                        <label for="UserEmail" class="LabelForm">Correo</label>
-                                    </div>
-                                </div>
-                                <div class="DivForTwoComponents">
-                                    <div class="Component">
-                                        <input class="InputText" type="password" placeholder="Contraseña" name="UserPassword" id="UserPassword" required />
-                                        <label for="UserPassword" class="LabelForm">Contraseña</label>
-                                    </div>
-                                    <div class="Component">
-                                        <input class="InputText" type="password" placeholder="Confirmar Contraseña" name="UserPasswordConfirm" id="UserPasswordConfirm" required />
-                                        <label for="UserPasswordConfirm" class="LabelForm">Confirmar Contraseña</label>
-                                    </div>
-                                </div>
-                                <div class="Component BtnIS">
-                                    <input type="submit" value="Registrarme" class="RegisterButton" id="RegisterButton" disabled />
-                                </div>
-                            </form>
-                            <div class="Component">
-                                <p>¿Ya tienes cuenta? <a asp-controller="User" asp-action="LogIn">Inicia Sesion</a></p>
                             </div>
                         </div>
                     </main>
@@ -171,5 +175,6 @@
             </div>
         </div>
     </div>
+    <script src="~/js/SignIn.js"></script>
 </body>
 </html>
