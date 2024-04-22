@@ -102,56 +102,67 @@
                                 <form asp-controller="" asp-action="" method="post" class="FormMakeRental">
                                     <div class="DivFormMakeRentalInternalInputs">
                                         <div class="DivFormMakeRentalInternaInputslLeft">
-                                            <label>Fecha Inicio Alquiler</label>
-                                            <input type="datetime-local" name="name" class="InputDateTime" />
-                                            <label>Fecha Fin Alquiler</label>
-                                            <input type="datetime-local" name="name" class="InputDateTime" />
+                                            <label class="LabelForm">Fecha Inicio Alquiler</label>
+                                            <input type="datetime-local" name="name" class="InputDateTime FormComponent" />
+                                            <label class="LabelForm">Fecha Fin Alquiler</label>
+                                            <input type="datetime-local" name="name" class="InputDateTime FormComponent" />
                                         </div>
                                         <div class="DivFormMakeRentalInternaInputslRight">
                                             <div class="DivInfoFormMakeRental">
-                                                <label>Vehículo</label>
-                                                <label>@Model.Vehicle.VehicleType_Vehicle : @Model.Vehicle.VehicleOutline_Vehicle</label>
+                                                <label class="LabelForm">Vehículo</label>
+                                                <input type="text" class="FormComponent FormInputText" readonly value="@Model.Vehicle.VehicleType_Vehicle : @Model.Vehicle.VehicleOutline_Vehicle" />
                                             </div>
                                             <div class="DivInfoFormMakeRental">
-                                                <label>Lugar de Recogida y Entega</label>
-                                                <select>
-                                                    <option value=0 selected disabled>Seleccione un Lugar</option>
+                                                <label class="LabelForm">Ciudad</label>
+                                                <input type="text" class="FormComponent FormInputText" readonly value=@Model.Vehicle.VehicleCity_Vehicle />
+                                            </div>
+                                            <div class="DivInfoFormMakeRental">
+                                                <label class="LabelForm">Lugar de Recogida y Entega</label>
+                                                <select class="FormComponent FormSelect">
+                                                    <option value=0 selected disabled class="FormSelectOption">Seleccione un Lugar</option>
                                                     @foreach (var Place in Model.Places)
                                                     {
-                                                        <option value=@Place.Id_RentalPlace>@Place.Name_RentalPlace</option>
+                                                        <option value=@Place.Id_RentalPlace class="FormSelectOption">@Place.Name_RentalPlace</option>
                                                     }
                                                 </select>
                                             </div>
                                             <div class="DivInfoFormMakeRental">
-                                                <input type="checkbox" id="VehicleWashButton" />
-                                                <label>Agregar lavada</label>
-                                                <input type="text" id="VehicleWashPrice"/>
+                                                <span class="SpanCheckBoxWash LabelForm">
+                                                    <div class="DivCheckBoxWash">
+                                                        <input id="VehicleWashButton" type="checkbox">
+                                                        <label for="VehicleWashButton">
+                                                            <div class="TickMark"></div>
+                                                        </label>
+                                                    </div>
+                                                    Agregar lavada
+                                                </span>
+                                                <input type="text" id="VehicleWashPrice" class="FormComponent FormInputText" readonly />
                                             </div>
                                             <div class="DivInfoFormMakeRental">
-                                                <label>Seguro</label>
-                                                <select>
-                                                    <option value=0 selected disabled>Seleccione un Seguro</option>
+                                                <label class="LabelForm">Seguro</label>
+                                                <select class="FormComponent FormSelect">
+                                                    <option value=0 selected disabled class="FormSelectOption">Seleccione un Seguro</option>
                                                     @foreach (var Insurance in Model.Insurances)
                                                     {
-                                                        <option value=@Insurance.Id_RentalInsurance>@Insurance.Name_RentalInsurance (@Insurance.Price_RentalInsurance)</option>
+                                                        <option value=@Insurance.Id_RentalInsurance class="FormSelectOption">@Insurance.Name_RentalInsurance (@Insurance.Price_RentalInsurance)</option>
                                                     }
                                                 </select>
                                             </div>
                                             <div class="DivInfoFormMakeRental">
-                                                <button id="CalculateRentalPriceButton">Calcular Total Alquiler</button>
-                                                <input type="text" value="" id="RentalPrice" />
+                                                <button id="CalculateRentalPriceButton" class="FormComponent FormButton">Calcular Total Alquiler</button>
+                                                <input type="text" value="" id="RentalPrice" class="FormComponent FormInputText" />
                                             </div>
                                             <div class="DivInfoFormMakeRental">
-                                                <label>Método de Pago</label>
-                                                <select>
-                                                    <option value=0 selected disabled>Seleccione un Método de Pago</option>
+                                                <label class="LabelForm">Método de Pago</label>
+                                                <select class="FormComponent FormSelect">
+                                                    <option value=0 selected disabled class="FormSelectOption">Seleccione un Método de Pago</option>
                                                     @foreach (var PaymentMethod in Model.PaymentMethods)
                                                     {
-                                                        <option value=@PaymentMethod.Id_RentalPaymentMethod>@PaymentMethod.Name_RentalPaymentMethod</option>
+                                                        <option value=@PaymentMethod.Id_RentalPaymentMethod class="FormSelectOption">@PaymentMethod.Name_RentalPaymentMethod</option>
                                                     }
                                                 </select>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="DivFormMakeRentalInternalButton">
