@@ -32,7 +32,8 @@ namespace VEHICLE_RENTAL.Controllers
 
         public IActionResult SignIn()
         {
-            return View();
+            UserIdentificationType UserIdentificationType = new();
+            return View(UserIdentificationType.GetAllUserIdentificationTypes());
         }
 
         [Authorize]
