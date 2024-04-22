@@ -1,13 +1,6 @@
-﻿@{
+﻿@model List<UserIdentificationType>;
+@{
     Layout = null;
-     /*
-     * @foreach (var IdentificationTypeUser in Model)
-                                                {
-                                                <option value=@IdentificationTypeUser.Id_IdentificationTypeUser>
-                                                    @IdentificationTypeUser.Name_IdentificationType (@IdentificationTypeUser.Symbol_IdentificationType)
-    </option>
-    }
-    */
 }
 <!DOCTYPE html>
 <html lang="es">
@@ -123,8 +116,13 @@
                                 <div class="DivForTwoComponents">
                                     <div class="Component">
                                         <select id="UserIdentificationType" name="UserIdentificationType">
-                                            <option disabled selected>Tipo de Identificación</option>
-
+                                            <option disabled selected>Seleccione un Tipo de Identificación</option>
+                                            @foreach (var IdentificationTypeUser in Model)
+                                            {
+                                                <option value=@IdentificationTypeUser.Id_UserIdentificationType>
+                                                    @IdentificationTypeUser.Name_UserIdentificationType (@IdentificationTypeUser.Symbol_UserIdentificationType)
+                                                </option>
+                                            }
                                         </select>
                                         <label for="UserIdentificationType" class="LabelForm">Tipo de Identificación</label>
                                     </div>
