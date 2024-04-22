@@ -108,14 +108,6 @@
                                             <a class="LinkVehicleInfoIndex" asp-controller="Vehicle" asp-action="VehicleInfoRental" asp-route-Id_Vehicle=@Vehicle.Id_Vehicle>
                                                 <h3 class="TextLinkVehicleInfoIndex">@Vehicle.VehicleType_Vehicle: @Vehicle.VehicleBrand_Vehicle @Vehicle.VehicleOutline_Vehicle</h3>
                                             </a>
-                                            <p class="VehicleInfoTitle">Tipo de @Vehicle.VehicleType_Vehicle: <span class="VehicleInfoValue">@Vehicle.VehicleClassification_Vehicle</span></p>
-                                            <p class="VehicleInfoTitle">Cilindrada: <span class="VehicleInfoValue">@Vehicle.CylinderCapacity_Vehicle CC</span></p>
-                                            <p class="VehicleInfoTitle">Cilindrada: <span class="VehicleInfoValue">@Vehicle.Color_Vehicle</span></p>
-                                            <p class="VehicleInfoTitle">Modelo: <span class="VehicleInfoValue">@Vehicle.Model_Vehicle</span></p>
-                                            <p class="VehicleInfoTitle">Color: <span class="VehicleInfoValue">@Vehicle.Color_Vehicle</span></p>
-                                            <p class="VehicleInfoTitle">Cantidad de Pasajeros: <span class="VehicleInfoValue">@Vehicle.PassengerCapacity_Vehicle</span></p>
-                                            <p class="VehicleInfoTitle">Tipo de Combustible: <span class="VehicleInfoValue">@Vehicle.VehicleFuelType_Vehicle</span></p>
-                                            <p class="VehicleInfoTitle">Precio de Alquiler (Por Día): <span class="VehicleInfoValue">@Vehicle.RentalPriceDay_Vehicle Pesos</span></p>
                                             <p class="VehicleInfoTitle">Ciudad: <span class="VehicleInfoValue">@Vehicle.VehicleCity_Vehicle</span></p>
                                             <img class="VehiclePhoto" src="~/VehiclePhotos/@Vehicle.PhotoRoute_Vehicle" alt="Foto de @Vehicle.VehicleType_Vehicle : @Vehicle.VehicleBrand_Vehicle @Vehicle.VehicleOutline_Vehicle" />
                                         </div>
