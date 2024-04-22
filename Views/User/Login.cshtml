@@ -97,33 +97,37 @@
                             <div class="DivFormTitle">
                                 <h2 class="FormTitle">Iniciar Sesión</h2>
                             </div>
-                            @if (ViewBag.Message != null)
-                            {
-                                <h3 class="ErroViewBag">@ViewBag.Message</h3>
-                            }
-                            <form asp-controller="User" asp-action="LogInAction" method="post" class="Formulario">
-                                <div class="Component">
-                                    <input class="TextInput" type="email" placeholder="Correo" name="UserEmail" id="Correo" required="" />
-                                    <label for="Correo" class="LabelForm">Correo</label>
-                                </div>
-                                <div class="Component">
-                                    <input class="TextInput" type="password" placeholder="Contraseña" name="UserPassword" id="Contrasena" required />
-                                    <label for="Contrasena" class="LabelForm">Contraseña</label>
-                                </div>
-                                <div class="KeepSessionComponent">
-                                    <div class="KeepSessionDiv">
-                                        <input id="KeepSessionButton" name="KeepSession" type="checkbox">
-                                        <label class="KeepSessionLabel" for="KeepSessionButton">
-                                            ¿Desea mmantener la sesión iniciada?
-                                        </label>
+                            <div class="DivErroViewBag">
+                                @if (ViewBag.Message != null)
+                                {
+                                    <h3 class="ErroViewBag">@ViewBag.Message</h3>
+                                }
+                            </div>
+                            <div class="DivFormLogIn">
+                                <form asp-controller="User" asp-action="LogInAction" method="post" class="FormLogIn">
+                                    <div class="Component">
+                                        <input class="TextInput" type="email" placeholder="Correo" name="UserEmail" id="UserEmail" required="" />
+                                        <label for="UserEmail" class="LabelForm">Correo</label>
                                     </div>
+                                    <div class="Component">
+                                        <input class="TextInput" type="password" placeholder="Contraseña" name="UserPassword" id="UserPassword" required />
+                                        <label for="UserPassword" class="LabelForm">Contraseña</label>
+                                    </div>
+                                    <div class="KeepSessionComponent Component">
+                                        <div class="KeepSessionDiv">
+                                            <input id="KeepSessionButton" name="KeepSession" type="checkbox" class="KeepSessionCheckBox" />
+                                            <label for="KeepSessionButton" class="KeepSessionLabel">
+                                                Mantener la sesión iniciada
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="Component DivBtnLogIn">
+                                        <input type="submit" value="Iniciar Sesión" class="LogInButton" />
+                                    </div>
+                                </form>
+                                <div class="Component DivSignIn">
+                                    <p class="TextSignIn">¿No tienes cuenta? <a asp-controller="User" asp-action="SignIn" class="TextLinkSignIn">Crea una</a></p>
                                 </div>
-                                <div class="Component BtnBtnLogIn">
-                                    <input type="submit" value="Iniciar Sesión" class="BtnIniciarSesion" />
-                                </div>
-                            </form>
-                            <div class="Component">
-                                <p>¿No tienes cuenta? <a asp-controller="User" asp-action="SignIn">Crea una</a></p>
                             </div>
                         </div>
                     </main>
