@@ -10,15 +10,24 @@ namespace VEHICLE_RENTAL.Controllers
 {
     public class UserController : Controller
     {
-        /*private UserModel UserSessionData()
+        private UserModel UserSessionData()
         {
             var Identity = HttpContext.User.Identity as ClaimsIdentity;
             var UserSessionData = Identity.FindFirst(ClaimTypes.UserData).Value;
             return JsonConvert.DeserializeObject<UserModel>(UserSessionData);
-        }*/
+        }
         public IActionResult Login()
         {
+            ClaimsPrincipal ClaimsPrincipal = HttpContext.User;
+            if (ClaimsPrincipal != null)
+            {
+                if (ClaimsPrincipal.Identity.IsAuthenticated)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
             return View();
+
         }
 
         public IActionResult SignIn()
@@ -46,8 +55,8 @@ namespace VEHICLE_RENTAL.Controllers
                         new ("Email", UserModel.Email_User)
                     };
                     ClaimsIdentity ClaimsIdentity = new(Claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                    Claim DatosUsuario = new(ClaimTypes.UserData, JsonConvert.SerializeObject(UserModel));
-                    ClaimsIdentity.AddClaim(DatosUsuario);
+                    Claim UserData = new(ClaimTypes.UserData, JsonConvert.SerializeObject(UserModel));
+                    ClaimsIdentity.AddClaim(UserData);
                     AuthenticationProperties AuthenticationProperties = new()
                     {
                         AllowRefresh = true,
