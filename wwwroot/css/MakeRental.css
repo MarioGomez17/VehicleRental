@@ -161,12 +161,12 @@ html, body {
     align-items: center;
 }
 
-.DivFormTitleMakeRental{
+.DivFormTitleMakeRental {
     width: 90%;
     height: 10%;
 }
 
-.FormTitleMakeRental{
+.FormTitleMakeRental {
     margin: 0;
     text-align: center;
 }
@@ -226,7 +226,6 @@ html, body {
     width: 95%;
     font-family: var(--Font);
     text-transform: uppercase;
-    border: none;
     font-size: 40px;
     font-weight: bold;
     background: transparent;
@@ -237,11 +236,195 @@ html, body {
     box-shadow: inset 0 0 0 0 var(--SecondColor);
 }
 
-.ButtonSendFormMakeRental:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 0 var(--SecondColor);
+    .ButtonSendFormMakeRental:hover {
+        color: var(--Wihte);
+        box-shadow: inset 0 -100px 0 0 var(--SecondColor);
+    }
+
+    .ButtonSendFormMakeRental:active {
+        transform: scale(0.9);
+    }
+
+.DivInfoFormMakeRental {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.ButtonSendFormMakeRental:active {
-    transform: scale(0.9);
+.FormComponent {
+    font-family: var(--Font);
+    text-transform: uppercase;
 }
+
+.FormButton {
+    border-radius: 20px;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    transition: ease-out 0.8s;
+    border: 4px solid var(--SecondColor);
+    box-shadow: inset 0 0 0 0 var(--SecondColor);
+}
+
+    .FormButton:hover {
+        color: var(--Wihte);
+        box-shadow: inset 0 -100px 0 0 var(--SecondColor);
+    }
+
+    .FormButton:active {
+        transform: scale(0.9);
+    }
+
+.LabelForm{
+    font-weight: bold;
+}
+
+.FormInputText {
+    border-radius: 20px;
+    border: solid 4px var(--FifthColor);
+    width: 342px;
+    padding: 0;
+    text-indent: 20px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.FormSelect {
+    border-radius: 20px;
+    border: solid 4px var(--FifthColor);
+    width: 350px;
+    text-indent: 20px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.FormSelectOption {
+    font-weight: bold;
+}
+
+.InputDateTime {
+    font-family: var(--Font);
+    font-weight: bold;
+}
+
+
+.SpanCheckBoxWash {
+    display: flex;
+    width: 190px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+.DivCheckBoxWash * {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.DivCheckBoxWash input[type="checkbox"] {
+    display: none;
+}
+
+.DivCheckBoxWash label {
+    --size: 30px;
+    --shadow: calc(var(--size) * .07) calc(var(--size) * .1);
+    position: relative;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    margin: 0 auto;
+    background-color: var(--SixthColor);
+    background-image: linear-gradient(43deg, var(--SixthColor) 0%, var(--FifthColor) 46%, var(--FirstColor) 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease transform, 0.2s ease background-color, 0.2s ease box-shadow;
+    overflow: hidden;
+    z-index: 1;
+    border: 3px solid var(--Black);
+}
+
+    .DivCheckBoxWash label:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        width: calc(var(--size) * .3);
+        height: calc(var(--size) * .3);
+        margin: 0 auto;
+        background-color: #fff;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        transition: 0.2s ease width, 0.2s ease height;
+    }
+
+    .DivCheckBoxWash label:hover:before {
+        width: calc(var(--size) * .55);
+        height: calc(var(--size) * .55);
+    }
+
+    .DivCheckBoxWash label:active {
+        transform: scale(0.9);
+    }
+
+.DivCheckBoxWash .TickMark {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    left: calc(var(--size) * -.05);
+    width: calc(var(--size) * .6);
+    height: calc(var(--size) * .6);
+    margin: 0 auto;
+    margin-left: calc(var(--size) * .14);
+    transform: rotateZ(-40deg);
+}
+
+    .DivCheckBoxWash .TickMark:before,
+    .DivCheckBoxWash .TickMark:after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        border-radius: 2px;
+        opacity: 0;
+        transition: 0.2s ease transform, 0.2s ease opacity;
+    }
+
+    .DivCheckBoxWash .TickMark:before {
+        left: 0;
+        bottom: 0;
+        width: calc(var(--size) * .1);
+        height: calc(var(--size) * .3);
+        transform: translateY(calc(var(--size) * -.68));
+    }
+
+    .DivCheckBoxWash .TickMark:after {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: calc(var(--size) * .1);
+        transform: translateX(calc(var(--size) * .38));
+    }
+
+.DivCheckBoxWash input[type="checkbox"]:checked + label {
+    background-color: var(--SixthColor);
+    background-image: linear-gradient(43deg, var(--SixthColor) 0%, var(--FifthColor) 46%, var(--FirstColor) 100%);
+}
+
+    .DivCheckBoxWash input[type="checkbox"]:checked + label:before {
+        width: 0;
+        height: 0;
+    }
+
+    .DivCheckBoxWash input[type="checkbox"]:checked + label .TickMark:before,
+    .DivCheckBoxWash input[type="checkbox"]:checked + label .TickMark:after {
+        transform: translate(0);
+        opacity: 1;
+    }
