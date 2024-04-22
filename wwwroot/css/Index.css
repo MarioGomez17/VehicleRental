@@ -171,6 +171,7 @@ html, body{
     height: 90%;
     background-color: var(--ThirdColor);
     border: solid 5px var(--SixthColor);
+    border-radius: 15px;
     overflow: auto;
     scrollbar-width: none;
     display: grid;
@@ -194,7 +195,7 @@ html, body{
 }
 
 .VehiclePhoto {
-    width: 230px;
+    width: 210px;
     height: 150px;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -205,25 +206,32 @@ html, body{
     color: var(--Wihte);
     font-weight: bold;
     margin: 0;
-    width:90%;
     display: flex;
-    justify-content: space-between;
     font-size: 14px;
+    gap: 10px;
 }
 
 .VehicleInfoValue {
-    color: var(--FourthColor);
+    color: var(--Black);
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .LinkVehicleInfoIndex{
     text-decoration: none;
-}
+}    
 
 .TextLinkVehicleInfoIndex{
     color: var(--FirstColor);
-    font-size: 18px;
+    font-size: 14px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.LinkVehicleInfoIndex:hover .TextLinkVehicleInfoIndex {
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .DivFooterIndex {
