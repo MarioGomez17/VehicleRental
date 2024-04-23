@@ -336,6 +336,7 @@ html, body {
     text-transform: uppercase;
     margin: 15px 0;
     padding-right: 15px;
+    font-family: var(--Font);
 }
 
 .TextInput:focus {

@@ -318,6 +318,7 @@ html, body {
     text-transform: uppercase;
     margin: 5px 0;
     padding-right: 15px;
+    font-family: var(--Font);
 }
 
     .TextInput:focus {
@@ -338,10 +339,12 @@ html, body {
     font-weight: bold;
     text-transform: uppercase;
     margin: 5px 0;
+    font-family: var(--Font);
 }
 
 .FormSelectOption {
     font-weight: bold;
+    font-family: var(--Font);
 }
 
 .FormSelect:focus {
