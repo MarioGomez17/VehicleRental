@@ -108,17 +108,17 @@
                                 <form asp-controller="User" asp-action="SignInAction" method="post" class="FormSigIn">
                                     <div class="DivForTwoComponents">
                                         <div class="Component">
-                                            <input class="TextInput" type="text" placeholder="Nombre" name="UserName" id="UserName" required />
+                                            <input class="TextInput" type="text" placeholder="Nombre" name="Name_User" id="UserName" required />
                                             <label for="UserName" class="LabelForm">Nombre</label>
                                         </div>
                                         <div class="Component">
-                                            <input class="TextInput" type="text" placeholder="Apellido" name="UserLastName" id="UserLastName" required />
+                                            <input class="TextInput" type="text" placeholder="Apellido" name="LastName_User" id="UserLastName" required />
                                             <label for="UserLastName" class="LabelForm">Apellido</label>
                                         </div>
                                     </div>
                                     <div class="DivForTwoComponents">
                                         <div class="Component">
-                                            <select id="UserIdentificationType" name="UserIdentificationType" class="FormSelect">
+                                            <select id="UserIdentificationType" name="UserIdentificationType_User" class="FormSelect">
                                                 <option disabled selected class="FormSelectOption">Seleccione un Tipo de Identificación</option>
                                                 @foreach (var IdentificationTypeUser in Model)
                                                 {
@@ -130,27 +130,27 @@
                                             <label for="UserIdentificationType" class="LabelForm">Tipo de Identificación</label>
                                         </div>
                                         <div class="Component">
-                                            <input class="TextInput" type="number" placeholder="Número de Identificación" name="UserIdentification" id="UserIdentification" required />
+                                            <input class="TextInput" type="number" placeholder="Número de Identificación" name="IdentificationNumber_User" id="UserIdentification" required />
                                             <label for="UserIdentification" class="LabelForm">Número de Identificación</label>
                                         </div>
                                     </div>
                                     <div class="DivForTwoComponents">
                                         <div class="Component">
-                                            <input class="TextInput" type="number" placeholder="Teléfono" name="UserPhoneNumber" id="UserPhoneNumber" required />
+                                            <input class="TextInput" type="number" placeholder="Teléfono" name="Phone_User" id="UserPhoneNumber" required />
                                             <label for="UserPhoneNumber" class="LabelForm">Teléfono</label>
                                         </div>
                                         <div class="Component">
-                                            <input class="TextInput" type="email" placeholder="Correo" name="UserEmail" id="UserEmail" required />
+                                            <input class="TextInput" type="email" placeholder="Correo" name="Email_User" id="UserEmail" required />
                                             <label for="UserEmail" class="LabelForm">Correo</label>
                                         </div>
                                     </div>
                                     <div class="DivForTwoComponents">
                                         <div class="Component">
-                                            <input class="TextInput" type="password" placeholder="Contraseña" name="UserPassword" id="UserPassword" required />
+                                            <input class="TextInput" type="password" placeholder="Contraseña" name="Password_User" id="Password_User" required />
                                             <label for="UserPassword" class="LabelForm">Contraseña</label>
                                         </div>
                                         <div class="Component">
-                                            <input class="TextInput" type="password" placeholder="Confirmar Contraseña" name="UserPasswordConfirm" id="UserPasswordConfirm" required />
+                                            <input class="TextInput" type="password" placeholder="Confirmar Contraseña" name="Password_UserConfirm" id="Password_UserdConfirm" required />
                                             <label for="UserPasswordConfirm" class="LabelForm">Confirmar Contraseña</label>
                                         </div>
                                     </div>

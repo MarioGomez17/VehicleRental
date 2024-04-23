@@ -1,15 +1,15 @@
-﻿const UserPassword = document.getElementById('UserPassword');
-const UserPasswordConfirm = document.getElementById('UserPasswordConfirm');
+﻿const Password_User = document.getElementById('Password_User');
+const Password_UserConfirm = document.getElementById('Password_UserConfirm');
 const RegisterButton = document.getElementById('RegisterButton');
 
-UserPassword.addEventListener('input', ValidatePassword);
-UserPasswordConfirm.addEventListener('input', ValidatePassword);
+Password_User.addEventListener('input', ValidatePassword);
+Password_UserConfirm.addEventListener('input', ValidatePassword);
 
 function ValidatePassword() {
-    const UserPasswordVariable = UserPassword.value;
-    const UserPasswordConfirmVariable = UserPasswordConfirm.value;
+    const Password_UserVariable = Password_User.value;
+    const Password_UserConfirmVariable = Password_UserConfirm.value;
 
-    if ((UserPasswordVariable.length) >= 8 && (UserPasswordVariable === UserPasswordConfirmVariable)) {
+    if ((Password_UserVariable.length) >= 8 && (Password_UserVariable === Password_UserConfirmVariable)) {
         RegisterButton.disabled = false;
         RegisterButton.classList.add("RegisterButtonEnabled");
 

@@ -80,6 +80,30 @@ namespace VEHICLE_RENTAL.Controllers
             }
         }
 
+        public IActionResult SignInAction(string Name_User, string LastName_User, int UserIdentificationType_User, string IdentificationNumber_User, string Phone_User, string Email_User, string Password_User)
+        {
+            UserModel UserModel = new();
+            if (UserModel.ValidateUser(IdentificationNumber_User))
+            {
+                if (UserModel.RegisterUser(Name_User, LastName_User, UserIdentificationType_User, IdentificationNumber_User, Phone_User, Email_User, Password_User))
+                {
+                    return View("LogIn");
+                }
+                else
+                {
+                    ViewBag.Message = "Complete los campos del formulario correctamente";
+                    SignIn();
+                    return View("SignIn");
+                }
+            }
+            else
+            {
+                ViewBag.Message = "El usuario ya existe";
+                SignIn();
+                return View("SignIn");
+            }
+        }
+
         [Authorize]
         public async Task<IActionResult> LogOut()
         {
