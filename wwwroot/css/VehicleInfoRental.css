@@ -150,15 +150,21 @@ html, body {
 .MainVehicleInfoRental {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ContentMainVehicleInfoRental {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: var(--ThirdColor);
+    border: solid 5px var(--SixthColor);
+    border-radius: 15px;
 }
 
 .DivGroupComponentsVehicleInfoRental {
@@ -179,12 +185,13 @@ html, body {
     font-size: 20px;
     font-weight: bold;
     transition: .5s;
+    color: var(--Wihte);
 }
 
 .ValueVehicleInfoRental {
     border-radius: 20px;
     border: solid 4px var(--FifthColor);
-    width: 350px;
+    width: 300px;
     padding: 0;
     text-align: center;
     height: 40px;
