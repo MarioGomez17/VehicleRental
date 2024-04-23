@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/VehicleInfo.css">
+    <link rel="stylesheet" href="~/css/VehicleInfoRental.css">
     <title>Información Vehículo</title>
 </head>
 <body class="BodyVehicleInfo">
@@ -95,34 +95,58 @@
                 <div class="DivMainVehicleInfo">
                     <main role="main" class="MainVehicleInfo">
                         <div class="ContentMainVehicleInfo">
-                            <label>Placa</label>
-                            <input type="text" name="name" value="@Model.LicensePlate_Vehicle" readonly />
-                            <label>Cilindrada</label>
-                            <input type="text" name="name" value="" />
-                            <label>Modelo</label>
-                            <input type="text" name="name" value="" />
-                            <label>Ciudad</label>
-                            <select></select>
-                            <label>Color</label>
-                            <input type="text" name="name" value="" />
-                            <label>Cantidad de Pasajeros</label>
-                            <input type="text" name="name" value="" />
-                            <label>Tipo de Vehículo</label>
-                            <select></select>
-                            <label>Clasificación del Vehículo</label>
-                            <select></select>
-                            <label>Tipo de Combustible</label>
-                            <select></select>
-                            <label>Marca</label>
-                            <select></select>
-                            <label>Linea</label>
-                            <select></select>
-                            <label>Número de Certificado CDA</label>
-                            <input type="text" name="name" value="" />
-                            <label>Número de Póliza de Seguro</label>
-                            <input type="text" name="name" value="" />
-                            <button><a asp-controller="Rental" asp-action="MakeRental" asp-route-Id_Vehicle=@Model.Id_Vehicle>Realizar Alquiler</a></button>
-                            <button><a asp-controller="Home" asp-action="Index">Volver al Inicio</a></button>
+                            <div class="DivGroupComponentsVehicleInfo">
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Cilindrada</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Modelo</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                            </div>
+                            <div class="DivGroupComponentsVehicleInfo">
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Ciudad</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Color</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Cantidad de Pasajeros</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                            </div>
+                            <div class="DivGroupComponentsVehicleInfo">
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Tipo de Vehículo</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Clasificación del Vehículo</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Tipo de Combustible</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                            </div>
+                            <div class="DivGroupComponentsVehicleInfo">
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Marca</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                                <div class="DivTwoComponentsVehicleInfo">
+                                    <label class="TitleVehicleInfo">Linea</label>
+                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                </div>
+                            </div>
+                            <div class="DivGroupComponentsVehicleInfo">
+                                <button class="ButtonVehicleInfo"><a class="LinkButtonVehicleInfo" asp-controller="Rental" asp-action="MakeRental" asp-route-Id_Vehicle=@Model.Id_Vehicle>Realizar Alquiler</a></button>
+                                <button class="ButtonVehicleInfo"><a class="LinkButtonVehicleInfo" asp-controller="Home" asp-action="Index">Volver al Inicio</a></button>
+                            </div>
                         </div>
                     </main>
                 </div>
