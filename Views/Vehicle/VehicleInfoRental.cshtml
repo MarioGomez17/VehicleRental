@@ -98,54 +98,61 @@
                             <div class="DivGroupComponentsVehicleInfoRental">
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Cilindrada</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.CylinderCapacity_Vehicle" readonly />
                                 </div>
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Modelo</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.Model_Vehicle" readonly />
                                 </div>
                             </div>
                             <div class="DivGroupComponentsVehicleInfoRental">
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Ciudad</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.VehicleCity_Vehicle" readonly />
                                 </div>
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Color</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.Color_Vehicle" readonly />
                                 </div>
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Cantidad de Pasajeros</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.PassengerCapacity_Vehicle" readonly />
                                 </div>
                             </div>
                             <div class="DivGroupComponentsVehicleInfoRental">
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Tipo de Vehículo</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.VehicleType_Vehicle" readonly />
                                 </div>
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Clasificación del Vehículo</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.VehicleClassification_Vehicle" readonly />
                                 </div>
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Tipo de Combustible</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.VehicleFuelType_Vehicle" readonly />
                                 </div>
                             </div>
                             <div class="DivGroupComponentsVehicleInfoRental">
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Marca</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.VehicleBrand_Vehicle" readonly />
                                 </div>
                                 <div class="DivTwoComponentsVehicleInfoRental">
                                     <label class="TitleVehicleInfoRental">Linea</label>
-                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="@Model.VehicleOutline_Vehicle" readonly />
                                 </div>
                             </div>
                             <div class="DivGroupComponentsVehicleInfoRental">
-                                <button class="ButtonVehicleInfoRental"><a class="LinkButtonVehicleInfoRental" asp-controller="Rental" asp-action="MakeRental" asp-route-Id_Vehicle=@Model.Id_Vehicle>Realizar Alquiler</a></button>
-                                <button class="ButtonVehicleInfoRental"><a class="LinkButtonVehicleInfoRental" asp-controller="Home" asp-action="Index">Volver al Inicio</a></button>
+                                <a class="LinkButtonVehicleInfoRental" asp-controller="Home" asp-action="Index">
+
+                                    <button class="ButtonVehicleInfoRental">Volver al Inicio</button>
+                                </a>
+                                <a class="LinkButtonVehicleInfoRental" asp-controller="Rental" asp-action="MakeRental" asp-route-Id_Vehicle=@Model.Id_Vehicle>
+                                    <button class="ButtonVehicleInfoRental">
+                                        Realizar Alquiler
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </main>
