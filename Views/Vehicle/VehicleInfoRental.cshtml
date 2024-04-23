@@ -13,15 +13,15 @@
     <link rel="stylesheet" href="~/css/VehicleInfoRental.css" />
     <title>Información Vehículo</title>
 </head>
-<body class="BodyVehicleInfo">
-    <div class="ContentBodyVehicleInfo">
-        <div class="DivNavBarVehicleInfo">
-            <nav class="NavBarVehicleInfo">
-                <div class="LinkLogoVehicleInfo">
+<body class="BodyVehicleInfoRental">
+    <div class="ContentBodyVehicleInfoRental">
+        <div class="DivNavBarVehicleInfoRental">
+            <nav class="NavBarVehicleInfoRental">
+                <div class="LinkLogoVehicleInfoRental">
                     <a asp-controller="Home" asp-action="Index"><img class="ImageLogo" src="~/images/Logo.webp" alt="Logotipo" /></a>
                 </div>
-                <div class="DivLinkVehicleInfo">
-                    <a asp-controller="User" asp-action="LogIn" class="LinkVehicleInfo">
+                <div class="DivLinkVehicleInfoRental">
+                    <a asp-controller="User" asp-action="LogIn" class="LinkVehicleInfoRental">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login-2 IconLinkSVG"
                              width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1f9102"
                              fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -30,11 +30,11 @@
                             <path d="M3 12h13l-3 -3" />
                             <path d="M13 15l3 -3" />
                         </svg>
-                        <span class="LinkTextVehicleInfo">Iniciar Sesión</span>
+                        <span class="LinkTextVehicleInfoRental">Iniciar Sesión</span>
                     </a>
                 </div>
-                <div class="DivLinkVehicleInfo">
-                    <a asp-controller="User" asp-action="UserInfo" class="LinkVehicleInfo">
+                <div class="DivLinkVehicleInfoRental">
+                    <a asp-controller="User" asp-action="UserInfo" class="LinkVehicleInfoRental">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user IconLinkSVG"
                              width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#020291"
                              fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -42,11 +42,11 @@
                             <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
                             <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                         </svg>
-                        <span class="LinkTextVehicleInfo">Ver Mi Perfil</span>
+                        <span class="LinkTextVehicleInfoRental">Ver Mi Perfil</span>
                     </a>
                 </div>
-                <div class="DivLinkVehicleInfo">
-                    <a asp-controller="Vehicle" asp-action="VehiclesInfo" class="LinkVehicleInfo">
+                <div class="DivLinkVehicleInfoRental">
+                    <a asp-controller="Vehicle" asp-action="VehiclesInfo" class="LinkVehicleInfoRental">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-car IconLinkSVG"
                              width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#beac0d"
                              fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -55,11 +55,11 @@
                             <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
                         </svg>
-                        <span class="LinkTextVehicleInfo">Ver Mis Vehiculos</span>
+                        <span class="LinkTextVehicleInfoRental">Ver Mis Vehiculos</span>
                     </a>
                 </div>
-                <div class="DivLinkVehicleInfo">
-                    <a asp-controller="Rental" asp-action="RentalHistory" class="LinkVehicleInfo">
+                <div class="DivLinkVehicleInfoRental">
+                    <a asp-controller="Rental" asp-action="RentalHistory" class="LinkVehicleInfoRental">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-history IconLinkSVG"
                              width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000"
                              fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -67,11 +67,11 @@
                             <path d="M12 8l0 4l2 2" />
                             <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
                         </svg>
-                        <span class="LinkTextVehicleInfo">Ver Mis Alquileres</span>
+                        <span class="LinkTextVehicleInfoRental">Ver Mis Alquileres</span>
                     </a>
                 </div>
-                <div class="DivLinkVehicleInfo">
-                    <a asp-controller="User" asp-action="LogOut" class="LinkVehicleInfo">
+                <div class="DivLinkVehicleInfoRental">
+                    <a asp-controller="User" asp-action="LogOut" class="LinkVehicleInfoRental">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login IconLinkSVG"
                              width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#be0d0d"
                              fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -80,80 +80,80 @@
                             <path d="M21 12h-13l3 -3" />
                             <path d="M11 15l-3 -3" />
                         </svg>
-                        <span class="LinkTextVehicleInfo">Cerrar Sesión</span>
+                        <span class="LinkTextVehicleInfoRental">Cerrar Sesión</span>
                     </a>
                 </div>
             </nav>
         </div>
-        <div class="DivContentVehicleInfo">
-            <div class="DivHeaderVehicleInfo">
-                <header class="HeaderVehicleInfo">
-                    <h1 class="MainTitlelVehicleInfo">Alquiler de Vehículos</h1>
+        <div class="DivContentVehicleInfoRental">
+            <div class="DivHeaderVehicleInfoRental">
+                <header class="HeaderVehicleInfoRental">
+                    <h1 class="MainTitlelVehicleInfoRental">Alquiler de Vehículos</h1>
                 </header>
             </div>
-            <div class="DivMainContentVehicleInfo">
-                <div class="DivMainVehicleInfo">
-                    <main role="main" class="MainVehicleInfo">
-                        <div class="ContentMainVehicleInfo">
-                            <div class="DivGroupComponentsVehicleInfo">
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Cilindrada</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+            <div class="DivMainContentVehicleInfoRental">
+                <div class="DivMainVehicleInfoRental">
+                    <main role="main" class="MainVehicleInfoRental">
+                        <div class="ContentMainVehicleInfoRental">
+                            <div class="DivGroupComponentsVehicleInfoRental">
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Cilindrada</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
                                 </div>
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Modelo</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
-                                </div>
-                            </div>
-                            <div class="DivGroupComponentsVehicleInfo">
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Ciudad</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
-                                </div>
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Color</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
-                                </div>
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Cantidad de Pasajeros</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Modelo</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
                                 </div>
                             </div>
-                            <div class="DivGroupComponentsVehicleInfo">
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Tipo de Vehículo</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                            <div class="DivGroupComponentsVehicleInfoRental">
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Ciudad</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
                                 </div>
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Clasificación del Vehículo</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Color</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
                                 </div>
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Tipo de Combustible</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
-                                </div>
-                            </div>
-                            <div class="DivGroupComponentsVehicleInfo">
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Marca</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
-                                </div>
-                                <div class="DivTwoComponentsVehicleInfo">
-                                    <label class="TitleVehicleInfo">Linea</label>
-                                    <input class="ValueVehicleInfo" type="text" name="name" value="" readonly />
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Cantidad de Pasajeros</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
                                 </div>
                             </div>
-                            <div class="DivGroupComponentsVehicleInfo">
-                                <button class="ButtonVehicleInfo"><a class="LinkButtonVehicleInfo" asp-controller="Rental" asp-action="MakeRental" asp-route-Id_Vehicle=@Model.Id_Vehicle>Realizar Alquiler</a></button>
-                                <button class="ButtonVehicleInfo"><a class="LinkButtonVehicleInfo" asp-controller="Home" asp-action="Index">Volver al Inicio</a></button>
+                            <div class="DivGroupComponentsVehicleInfoRental">
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Tipo de Vehículo</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                </div>
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Clasificación del Vehículo</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                </div>
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Tipo de Combustible</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                </div>
+                            </div>
+                            <div class="DivGroupComponentsVehicleInfoRental">
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Marca</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                </div>
+                                <div class="DivTwoComponentsVehicleInfoRental">
+                                    <label class="TitleVehicleInfoRental">Linea</label>
+                                    <input class="ValueVehicleInfoRental" type="text" name="name" value="" readonly />
+                                </div>
+                            </div>
+                            <div class="DivGroupComponentsVehicleInfoRental">
+                                <button class="ButtonVehicleInfoRental"><a class="LinkButtonVehicleInfoRental" asp-controller="Rental" asp-action="MakeRental" asp-route-Id_Vehicle=@Model.Id_Vehicle>Realizar Alquiler</a></button>
+                                <button class="ButtonVehicleInfoRental"><a class="LinkButtonVehicleInfoRental" asp-controller="Home" asp-action="Index">Volver al Inicio</a></button>
                             </div>
                         </div>
                     </main>
                 </div>
             </div>
-            <div class="DivFooterVehicleInfo">
-                <footer class="FooterVehicleInfo">
-                    <span class="TextFooterVehicleInfo">
+            <div class="DivFooterVehicleInfoRental">
+                <footer class="FooterVehicleInfoRental">
+                    <span class="TextFooterVehicleInfoRental">
                         &copy; 2024 - Alquiler de Vehículos por Mario Gómez y Juan Diego Claros
                     </span>
                 </footer>
